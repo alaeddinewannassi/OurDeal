@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+
+            <TextView
+                android:id="@+id/nameDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="Tire Annonce"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/fab" />
+
+            <ImageView
+                android:id="@+id/photoDetail"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="38dp"
+                android:layout_below="@+id/nameDetail"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/descDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                tools:text="Description"
+                android:layout_marginTop="36dp"
+                android:paddingTop="25dp"
+                android:layout_below="@+id/photoDetail"
+                android:layout_alignParentStart="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="404dp"
+                android:layout_height="match_parent"
+                app:backgroundTint="@color/authui_inputTextColor"
+                android:src="@drawable/message"
+                android:layout_marginEnd="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="39dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
